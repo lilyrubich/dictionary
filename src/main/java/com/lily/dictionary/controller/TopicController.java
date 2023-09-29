@@ -2,7 +2,6 @@ package com.lily.dictionary.controller;
 
 import com.lily.dictionary.dao.PostgresTopicDAO;
 import com.lily.dictionary.model.Topic;
-import com.lily.dictionary.model.User;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

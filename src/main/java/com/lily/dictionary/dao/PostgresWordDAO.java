@@ -28,9 +28,10 @@ public class PostgresWordDAO implements WordDAO<Word> {
     RowMapper<Word> rowMapper = (rs, rowNum) -> {
         Word word = new Word();
         word.setId(rs.getLong("id"));
-        word.setForeign_word(rs.getString("topic_name"));
-        word.setTranslation(rs.getString("translation"));
+        word.setForeign_word(rs.getString("foreign_text"));
+        word.setTranslation(rs.getString("translation_text"));
         word.setId_topic(rs.getLong("id_topic"));
+        word.setId_topic(rs.getLong("id_user"));
         return word;
     };
 
